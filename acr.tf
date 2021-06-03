@@ -1,10 +1,10 @@
-resource "azurerm_container_registry" "acr" {
-  name                = "thns${random_integer.env.result}${terraform.workspace}"
-  resource_group_name = azurerm_resource_group.rg.name
-  location            = var.location
+module "myacr" {
+  source = "./components/acr"
 
-  sku           = var.acr_sku
-  admin_enabled = var.acr_admin_enabled
+  premium  = false
+  rg_name  = azurerm_resource_group.rg.name
+  tags     = local.tags
+  location = var.location
 
-  tags = local.tags
+
 }

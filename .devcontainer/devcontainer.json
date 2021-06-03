@@ -43,7 +43,7 @@
 		"ms-vscode.azurecli",
 		"ms-azuretools.vscode-azureterraform",
 		"ms-azuretools.vscode-docker",
-    "steefh.terraform-documentation-links"
+    	"steefh.terraform-documentation-links"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
