@@ -1,5 +1,5 @@
 resource "azurerm_container_registry" "acr" {
-  name                = "thns-${random_integer.env.result}"
+  name                = "thns${random_integer.env.result}${terraform.workspace}"
   resource_group_name = azurerm_resource_group.rg.name
   location            = var.location
 
