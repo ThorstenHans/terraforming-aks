@@ -28,6 +28,9 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
+      - name: Terraform Get
+        id: get
+        run: terraform get
       - name: Terraform Plan
         id: plan
         if: github.event_name == 'pull_request'
