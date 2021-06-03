@@ -49,7 +49,7 @@ variable "aks_kubernetes_version" {
 variable "aks_uptime_sla_enabled" {
   type        = bool
   default     = false
-  description = "Determines if AKS uptime SLA (paid) is enabled (defaults to true)"
+  description = "Determines if AKS uptime SLA (paid) is enabled. D`efaults to true"
 }
 
 variable "aks_default_nodepool_name" {
